@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo-登录页</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  </head>
+  <body>
+    <form action="index.html" class="login-form">
+      <div class="login-form-head">
+        <h1>Login</h1>
+        <p>Hello let's get started</p>
+        <div class="login-form-head-i">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+        </div>
+      </div>
+      <h3>OR</h3>
+      <div class="login-form-txtb">
+        <input type="text" />
+        <span data-placeholder="email"></span>
+      </div>
+
+      <div class="login-form-txtb">
+        <input type="password" />
+        <span data-placeholder="password"></span>
+      </div>
+
+      <input type="submit" class="login-form-btn" value="Login" />
+
+      <div class="login-form-bottom-text">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+    <script>
+      $(".login-form-txtb input").on("focus", function () {
+        $(this).addClass("focus");
+      });
+      $(".login-form-txtb input").on("blur", function () {
+        if ($(this).val() == "") {
+          $(this).removeClass("focus");
+        }
+      });
+    </script>
+  </body>
+</html>

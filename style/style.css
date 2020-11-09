@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.login-form {
+  width: 400px;
+  background: #f1f1f1;
+  height: 400px;
+  padding: 50px 40px 40px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-form-head {
+  background-color: #e25b7d;
+  width: 360px;
+  height: 100px;
+  color: #fff;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px #e25b7d;
+  padding: 10px 20px;
+  line-height: 26px;
+}
+.login-form-head h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.login-form-head-i {
+  text-align: center;
+  margin-top: 5px;
+}
+.login-form-head-i i {
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-form-head-i i:hover {
+  transform: scale(1.5);
+}
+.login-form h3 {
+  text-align: center;
+  color: #777474;
+  margin: 15px 0;
+}
+.login-form-txtb {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+.login-form-txtb input {
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+.login-form-txtb input.focus + span::before {
+  top: -5px;
+  font-size: 14px;
+  color: #e25b7d;
+}
+.login-form-txtb input.focus + span::after {
+  width: 100%;
+}
+.login-form-txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+.login-form-txtb span::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  left: 0%;
+  top: 100%;
+  background: linear-gradient(120deg, #e77b96, #e25b7d);
+  transition: 0.5s;
+}
+.login-form-btn {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: 50px;
+  outline: none;
+  background: #e77b96;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px #e77b96;
+  font-family: "Microsoft YaHei";
+  font-weight: 300;
+}
+.login-form-btn:hover {
+  background-color: #e25b7d;
+}
+.login-form-bottom-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+.login-form-bottom-text a {
+  color: #999;
+}
+.login-form-bottom-text a:hover {
+  text-decoration: underline;
+}
